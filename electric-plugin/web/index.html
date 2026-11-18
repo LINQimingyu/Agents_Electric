@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Agents Electric</title>
+  <link rel="icon" type="image/png" href="/electric-blank-v1.png">
+  <link rel="stylesheet" href="/api/electric/style.css">
+  <script type="module" src="/api/electric/ui.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳转到工作区</a>
+  <div id="app" class="shell">
+    <nav id="nav" class="rail glass" aria-label="工作台导航"></nav>
+    <div class="workspace">
+      <header id="top" class="top glass"></header>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <main id="main" tabindex="-1"><div class="initial">正在连接工作台…</div></main>
+    </div>
+  </div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <dialog id="question" aria-labelledby="question-title"></dialog>
+</body>
+</html>

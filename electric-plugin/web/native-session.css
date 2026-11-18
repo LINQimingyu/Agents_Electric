@@ -1,0 +1,12 @@
+[class*="_logoRow"] [class*="_brandMark"],
+[data-sidebar-toggle] [class*="_railMark"],
+[class*="_logoRow"] [class*="_brandName"] > * {
+  display: none;
+}
+
+[class*="_logoRow"] [class*="_brandName"]::after {
+  content: "Agents Electric";
+  font-size: 14px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}

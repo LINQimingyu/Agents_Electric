@@ -1,0 +1,22 @@
+{
+  "name": "agents-electric",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.9.0"
+  },
+  "scripts": {
+    "start": "node scripts/start.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:workbench": "node tests/workbench.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.2-rc.1",
+    "fflate": "0.8.3",
+    "pnpm": "11.25.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.61.1"
+  }
+}

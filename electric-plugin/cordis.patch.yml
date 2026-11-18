@@ -1,0 +1,28 @@
+- id: harness-dev-context
+  disabled: true
+- insert:
+    - id: agents-electric-surface
+      name: agents-electric-workbench/surface
+    - id: preset-electric-review
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: electric-review
+        order: 15
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: 你是离线电气工程分析员。按任务约定分析资料，明确引用、缺项和验证边界。
+              complete: true
+              includeRuntimeContext: false
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+    - id: electric-workbench-skills
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: electric-workbench-files
+        includeDefaultRoots: false
+        customSkillDirs:
+          - !!js dshHomePath('skills')
+    - id: agents-electric-workbench
+      name: agents-electric-workbench

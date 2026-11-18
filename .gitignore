@@ -1,0 +1,5 @@
+node_modules/
+.local/
+.qa/
+playwright-report/
+test-results/
